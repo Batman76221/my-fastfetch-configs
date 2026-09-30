@@ -1,0 +1,164 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+
+    "logo": {
+        "type": "auto",
+        "source": "home/batman/Downloads/fastfetch/2nd config (ascii)",
+        "width": 64
+    },
+
+    "modules": [
+        "break",
+
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;255;43;108m┌──────────────────────Hardware──────────────────────┐"
+        },
+        {
+            "type": "title",
+            "key": " PC",
+            "keyColor": "\u001b[38;2;255;43;108m",
+            "format": "{user-name}"
+        },
+        {
+            "type": "host",
+            "key": "│ ├",
+            "hostname": true,
+            "keyColor": "\u001b[38;2;255;70;125m"
+        },
+        {
+            "type": "cpu",
+            "key": "│ ├",
+            "showPeCoreCount": true,
+            "keyColor": "\u001b[38;2;255;70;125m"
+        },
+        {
+            "type": "gpu",
+            "key": "│ ├󰢮",
+            "keyColor": "\u001b[38;2;255;90;145m"
+        },
+        {
+            "type": "memory",
+            "key": "│ ├",
+            "keyColor": "\u001b[38;2;255;90;145m"
+        },
+        {
+            "type": "disk",
+            "key": "│ ├",
+            "keyColor": "\u001b[38;2;255;110;160m",
+            "format": "{1} / {2} ({3}) - {9}"
+        },
+        {
+            "type": "swap",
+            "key": "│ └",
+            "keyColor": "\u001b[38;2;255;125;175m"
+        },
+
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;255;140;185m├──────────────────────Software──────────────────────┤"
+        },
+        {
+            "type": "os",
+            "key": " OS",
+            "keyColor": "\u001b[38;2;255;140;185m"
+        },
+        {
+            "type": "kernel",
+            "key": "│ ├",
+            "keyColor": "\u001b[38;2;255;155;195m"
+        },
+        {
+            "type": "packages",
+            "key": "│ ├󰏖",
+            "keyColor": "\u001b[38;2;255;155;195m"
+        },
+        {
+            "type": "terminal",
+            "key": "│ ├",
+            "keyColor": "\u001b[38;2;255;170;205m"
+        },
+        {
+            "type": "shell",
+            "key": "│ ├",
+            "keyColor": "\u001b[38;2;255;170;205m"
+        },
+        {
+            "type": "theme",
+            "key": "│ ├󰉼 Theme",
+            "keyColor": "\u001b[38;2;255;185;215m"
+        },
+        {
+            "type": "de",
+            "key": "│ ├ DE",
+            "keyColor": "\u001b[38;2;255;200;225m"
+        },
+        {
+            "type": "lm",
+            "key": "│ ├",
+            "keyColor": "\u001b[38;2;255;210;230m"
+        },
+        {
+            "type": "wm",
+            "key": "│ ├ WM",
+            "keyColor": "\u001b[38;2;255;220;235m"
+        },
+        {
+            "type": "wmtheme",
+            "key": "│ └󰉼 WM Theme",
+            "keyColor": "\u001b[38;2;255;230;240m"
+        },
+
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;255;235;243m├────────────────────Miscellaneous───────────────────┤"
+        },
+        {
+            "type": "uptime",
+            "key": "│  Uptime",
+            "keyColor": "\u001b[38;2;255;235;243m"
+        },
+        {
+            "type": "users",
+            "key": "│  Users",
+            "keyColor": "\u001b[38;2;255;240;246m"
+        },
+        {
+            "type": "localip",
+            "key": "│  IP",
+            "showIpv4": false,
+            "keyColor": "\u001b[38;2;255;240;246m"
+        },
+        {
+            "type": "command",
+            "key": "│  Weather",
+            "keyColor": "\u001b[38;2;255;245;250m",
+            "text": "curl -s 'https://wttr.in/?format=%t+-+%C'"
+        },
+        {
+            "type": "media",
+            "key": "│  Music",
+            "keyColor": "\u001b[38;2;255;250;252m",
+            "format": "{1} - {4}"
+        },
+        {
+            "type": "datetime",
+            "key": "│  Date and Time",
+            "keyColor": "\u001b[38;2;255;252;254m",
+            "format": "{3}/{11}/{1} - {14}:{18} {22}"
+        },
+
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;255;255;255m└────────────────────────────────────────────────────┘"
+        },
+
+        {
+            "type": "colors",
+            "paddingLeft": 20,
+            "symbol": "star"
+        },
+
+        "break"
+    ]
+}
